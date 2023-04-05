@@ -5,7 +5,7 @@ from src.repositories.movie_repository import movie_repository_singleton
 app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = \
-    'mysql://root:password@127.0.0.1:3306/movies'
+    'mysql://user:pass@host:3306/db_name'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
